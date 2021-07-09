@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="250dp"-->
+<!--                        android:id="@+id/rv_3"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_marginRight="20dp"/>-->
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="What are you going?"
+                        android:background="@drawable/search_bg"
+                        android:drawableLeft="@drawable/search_icon"
+                        android:textSize="14sp"
+                        android:layout_marginTop="30dp"
+                        android:padding="20dp"
+                        android:elevation="4dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore Events..."
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/rv_1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/rv_2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="70dp"/>
+        </LinearLayout>
+</ScrollView>
